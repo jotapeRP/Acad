@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+:root {
+  --blue: #007de4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home {
   color: white;
+  height: 100vh;
+  background-image: linear-gradient(
+      150deg,
+      rgba(0, 0, 27, 0.712),
+      rgba(0, 2, 36, 0.705)
+    ),
+    url(assets/pexels-timothy.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background: black url(assets/pexels-timothy.jpg) center center no repeat fixed;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar h2 {
+  font-size: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  font-size: 1.3em;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 30px;
+  display: inline;
+}
+
+nav ul li p {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+}
+
+nav ul li p:hover {
+  border-bottom: 1px solid var(--blue);
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(45deg, transparent 5%, var(--blue) 5%);
+  border: 0;
+  color: #fff;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.logomarca {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
