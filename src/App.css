@@ -27,12 +27,13 @@
 .navbar {
   padding: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar h2 {
@@ -53,26 +54,29 @@ nav ul {
 nav ul li {
   margin-right: 30px;
   display: inline;
+  letter-spacing: 3px;
 }
 
 nav ul li p {
   display: block;
   padding: 5px;
   cursor: pointer;
+  border-bottom: 1px solid transparent;
 }
 
 nav ul li p:hover {
   border-bottom: 1px solid var(--blue);
+  transition: 0.5s;
 }
 
 button {
+  margin: auto;
   padding: 10px;
   font-size: 20px;
-  font-family: "Bebas Neue", sans-serif;
-  background: linear-gradient(45deg, transparent 5%, var(--blue) 5%);
+  background: var(--blue);
   border: 0;
   color: #fff;
-  box-shadow: 6px 0px 0px #00e6f6;
+  border-bottom: 4px solid #00e6f6;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -80,9 +84,31 @@ button {
   touch-action: manipulation;
   cursor: pointer;
 }
+button:hover {
+  transition: 0.3s;
+  background: transparent;
+  border-bottom: 4px solid var(--blue);
+}
 
 .logomarca {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
+  line-height: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logomarca h1 {
+  font-size: 4em;
+  font-weight: normal;
+  letter-spacing: 8px;
+}
+span {
+  color: var(--blue);
+}
+.logomarca p {
+  font-size: 1.5em;
 }

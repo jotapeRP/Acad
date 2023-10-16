@@ -6,8 +6,10 @@ const Home = () => {
     <div className="home">
       <Navbar />
       <div className="logomarca">
-        <h1>Academia Estação Fitness</h1>
-        <span>Construa o seu corpo perfeito</span>
+        <h1>
+          Academia <span>Estação Fitness</span>
+        </h1>
+        <p>Construa o seu corpo perfeito</p>
         <button>Faça sua matrícula já</button>
       </div>
     </div>

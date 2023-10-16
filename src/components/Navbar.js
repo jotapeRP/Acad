@@ -6,10 +6,13 @@ const Navbar = () => {
       <h2>
         Academia
         <br />
-        Estação Fitness
+        <span>Estação Fitness</span>
       </h2>
       <nav>
         <ul>
+          <li>
+            <p>Depoimentos</p>
+          </li>
           <li>
             <p>Ligar</p>
           </li>
