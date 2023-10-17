@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegCommentDots, FaPhoneFlip, FaLocationDot } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
@@ -11,13 +12,22 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <p>Depoimentos</p>
+            <p>
+              <FaRegCommentDots />
+              Depoimentos
+            </p>
           </li>
           <li>
-            <p>Ligar</p>
+            <p>
+              <FaPhoneFlip />
+              Ligar
+            </p>
           </li>
           <li>
-            <p>Ver Rotas</p>
+            <p>
+              <FaLocationDot />
+              Local
+            </p>
           </li>
         </ul>
         <button>Solicitar Cotação</button>

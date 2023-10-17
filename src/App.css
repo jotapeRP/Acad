@@ -112,3 +112,47 @@ span {
 .logomarca p {
   font-size: 1.5em;
 }
+
+.socialMedia {
+  position: absolute;
+  bottom: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.socialMedia a {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.socialMedia a:hover {
+  color: var(--blue);
+}
+
+.comments {
+  height: 100vh;
+}
+
+.comments h2 {
+  font-size: 5em;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.card {
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #0000001c;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+}
