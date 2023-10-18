@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 :root {
-  --blue: #007de4;
+  --blue: #4971a6;
+  --blue2: #253140;
+  --escuro: #0e1826;
+  --claro: #4f5f73;
+  --white: #f2f2f2;
 }
 
 * {
@@ -10,7 +14,7 @@
 }
 
 .home {
-  color: white;
+  color: var(--white);
   height: 100vh;
   background-image: linear-gradient(
       150deg,
@@ -45,7 +49,7 @@ nav {
 nav ul {
   display: flex;
   font-size: 1.3em;
-  font-weight: bold;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -75,8 +79,8 @@ button {
   font-size: 20px;
   background: var(--blue);
   border: 0;
-  color: #fff;
-  border-bottom: 4px solid #00e6f6;
+  color: var(--white);
+  border-bottom: 4px solid transparent;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -126,7 +130,7 @@ span {
   font-size: 25px;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .socialMedia a:hover {
@@ -134,25 +138,52 @@ span {
 }
 
 .comments {
+  background-color: var(--blue2);
   height: 100vh;
+  position: relative;
 }
 
 .comments h2 {
-  font-size: 5em;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 4em;
   text-align: center;
+  color: var(--white);
 }
 .cards {
   display: flex;
-  margin: auto;
   justify-content: space-around;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--white);
 }
 
 .card {
+  margin-right: 10px;
   text-align: center;
   align-items: center;
+  box-shadow: 5px 5px 5px var(--escuro);
   padding: 30px;
-  background-color: #0000001c;
+  background-color: #4f5f73;
   width: 200px;
   height: 250px;
   border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.card h4 {
+  font-size: 1.2em;
+}
+
+.card img {
+  height: 65px;
+  width: 130px;
 }
