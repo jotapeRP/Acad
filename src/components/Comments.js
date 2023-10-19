@@ -40,6 +40,7 @@ const Comments = () => {
           <img src={img} alt="" />
         </div>
       </div>
+      <button>Escrava um comentário</button>
     </div>
   );
 };

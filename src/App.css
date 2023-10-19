@@ -7,6 +7,11 @@
   --white: #f2f2f2;
 }
 
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -186,4 +191,21 @@ span {
 .card img {
   height: 65px;
   width: 130px;
+}
+
+.rotas {
+  height: 100vh;
+  background-color: var(--blue2);
+}
+
+.rotas h2 {
+  font-size: 4em;
+  text-align: center;
+  color: var(--white);
+}
+
+.leaflet-container {
+  margin: auto;
+  height: 50vh;
+  width: 100%;
 }
