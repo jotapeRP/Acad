@@ -167,6 +167,13 @@ span {
   color: var(--white);
 }
 
+.comments button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 .card {
   margin-right: 10px;
   text-align: center;
@@ -194,12 +201,13 @@ span {
 }
 
 .rotas {
-  height: 100vh;
+  height: 68vh;
   background-color: var(--blue2);
 }
 
 .rotas h2 {
   font-size: 4em;
+  padding: 15px;
   text-align: center;
   color: var(--white);
 }
@@ -208,4 +216,32 @@ span {
   margin: auto;
   height: 50vh;
   width: 100%;
+}
+
+.footer {
+  position: relative;
+  height: 32vh;
+  display: flex;
+  background-color: var(--escuro);
+  justify-content: center;
+}
+
+.cardFooter {
+  color: var(--white);
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+.cardFooter h4 {
+  padding-bottom: 10px;
+}
+
+#end {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  text-align: center;
 }
