@@ -14,7 +14,7 @@ const Navbar = () => {
         <br />
         <span>Estação Fitness</span>
       </h2>
-      <nav ref={navRef}>
+      <nav ref={navRef} className="responsive_nav">
         <ul>
           <li>
             <p>

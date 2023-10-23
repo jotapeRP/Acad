@@ -262,14 +262,11 @@ span {
     align-items: center;
     justify-content: center;
     background-color: var(--blue);
-    transition: 1s;
-    transform: none;
+    transition: 0.4s;
   }
 
   .responsive_nav {
-    display: none;
-    transition: 1s;
-    transform: translateX(-100vw);
+    transform: translateX(40vw);
   }
 
   nav ul {
