@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaRegCommentDots, FaPhoneFlip, FaLocationDot } from "react-icons/fa6";
 
 const Navbar = () => {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
   return (
     <div className="navbar">
       <h2>
@@ -9,7 +14,7 @@ const Navbar = () => {
         <br />
         <span>Estação Fitness</span>
       </h2>
-      <nav>
+      <nav ref={navRef}>
         <ul>
           <li>
             <p>
@@ -32,6 +37,9 @@ const Navbar = () => {
         </ul>
         <button>Solicitar Cotação</button>
       </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        O
+      </button>
     </div>
   );
 };

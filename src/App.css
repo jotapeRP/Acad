@@ -46,6 +46,10 @@ nav {
   cursor: pointer;
 }
 
+.nav-btn {
+  display: none;
+}
+
 nav ul {
   display: flex;
   font-size: 1.3em;
@@ -208,6 +212,7 @@ span {
 }
 
 .leaflet-container {
+  z-index: 1;
   margin: auto;
   height: 50vh;
   width: 100%;
@@ -245,8 +250,44 @@ span {
   .navbar {
     background-color: var(--escuro);
   }
+
   .navbar nav {
+    z-index: 2;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    transition: 1s;
+    transform: none;
+  }
+
+  .responsive_nav {
     display: none;
+    transition: 1s;
+    transform: translateX(-100vw);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+  }
+
+  .nav-btn {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    right: 0;
+    background-color: transparent;
+  }
+  .nav-btn:hover {
+    border: none;
   }
 
   .navbar h2 {
