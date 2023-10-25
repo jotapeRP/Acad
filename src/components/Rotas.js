@@ -10,7 +10,7 @@ const Rotas = () => {
     iconSize: [38, 38],
   });
   return (
-    <div className="rotas">
+    <div className="rotas" id="local">
       <h2>Local</h2>
       <MapContainer
         center={[-12.134911007773022, -44.96799503360853]}

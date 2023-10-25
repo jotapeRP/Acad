@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <Navbar />
       <div className="logomarca">
         <h1>

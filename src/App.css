@@ -46,6 +46,11 @@ nav {
   cursor: pointer;
 }
 
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .nav-btn {
   display: none;
 }
@@ -69,11 +74,11 @@ nav ul li p {
   display: block;
   padding: 5px;
   cursor: pointer;
-  border-bottom: 1px solid transparent;
+  border-bottom: 4px solid transparent;
 }
 
 nav ul li p:hover {
-  border-bottom: 1px solid var(--blue);
+  border-bottom: 4px solid var(--blue);
   transition: 0.5s;
 }
 
@@ -255,18 +260,27 @@ span {
     z-index: 2;
     flex-direction: column;
     position: fixed;
+    box-shadow: 0px -5px 10px var(--escuro);
     top: 0;
     right: 0;
     height: 100%;
-    width: 40%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background-color: var(--blue);
-    transition: 0.4s;
+    transition: 0.6s;
   }
 
   .responsive_nav {
-    transform: translateX(40vw);
+    transform: translateY(-100vh);
+  }
+
+  .navbar nav button {
+    display: none;
+  }
+
+  .navbar .nav-btn {
+    display: flex;
   }
 
   nav ul {
@@ -277,10 +291,10 @@ span {
   }
 
   .nav-btn {
-    z-index: 3;
+    top: 3%;
     position: absolute;
     display: flex;
-    right: 0;
+    right: 3%;
     background-color: transparent;
   }
   .nav-btn:hover {

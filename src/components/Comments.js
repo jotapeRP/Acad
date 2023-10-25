@@ -3,7 +3,7 @@ import img from "../assets/5-stars.png";
 
 const Comments = () => {
   return (
-    <div className="comments">
+    <div className="comments" id="depoimentos">
       <h2>Depoimentos</h2>
       <div className="cards">
         <div className="card">
