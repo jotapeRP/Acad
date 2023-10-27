@@ -5,15 +5,10 @@ const EmailForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("Gostaria de fazer minha matrícula!");
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    if (name === "" || email === "" || number === "") {
-      alert("Preencha os formulários");
-      return;
-    }
 
     const templateParams = {
       from_name: name,
@@ -34,7 +29,7 @@ const EmailForm = () => {
           setName("");
           setEmail("");
           setNumber("");
-          setMessage("");
+          setMessage("Gostaria de fazer minha matrícula!");
         },
         (err) => {
           console.log("ERRO:", err);
@@ -42,7 +37,7 @@ const EmailForm = () => {
       );
   };
   return (
-    <div>
+    <div className="emailForm">
       <h2>Envie seus dados</h2>
       <form onSubmit={sendEmail}>
         <input
@@ -50,25 +45,27 @@ const EmailForm = () => {
           placeholder="Nome"
           onChange={(e) => setName(e.target.value)}
           value={name}
+          required
         />
         <input
           type="text"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
+          required
         />
         <input
           type="text"
           placeholder="Telefone"
           onChange={(e) => setNumber(e.target.value)}
           value={number}
+          required
         />
         <textarea
-          placeholder="Gostaria de fazer minha matíricula"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         ></textarea>
-        <input type="submit" value="Enviar" />
+        <input id="btn-sub" type="submit" value="Enviar" />
       </form>
     </div>
   );
