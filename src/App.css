@@ -188,6 +188,10 @@ textarea:focus {
   border-bottom: 2px solid var(--escuro);
 }
 
+.showForm {
+  display: none;
+}
+
 #btn-sub {
   width: 150px;
   margin: auto;
@@ -296,6 +300,14 @@ textarea:focus {
 
 .cardFooter h4 {
   padding-bottom: 10px;
+}
+
+#close-form {
+  top: 3%;
+  position: absolute;
+  display: flex;
+  right: 3%;
+  background-color: transparent;
 }
 
 #end {

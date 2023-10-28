@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { FaX } from "react-icons/fa6";
 import emailjs from "@emailjs/browser";
 
-const EmailForm = () => {
+const EmailForm = ({ formRef, showForm }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
@@ -37,8 +38,12 @@ const EmailForm = () => {
       );
   };
   return (
-    <div className="emailForm">
+    <div ref={formRef} className="emailForm">
+      <button id="close-form" onClick={showForm}>
+        <FaX />
+      </button>
       <h2>Envie seus dados</h2>
+
       <form onSubmit={sendEmail}>
         <input
           type="text"

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { FaBars, FaX } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ showForm }) => {
   const navRef = useRef();
 
   const showNavbar = () => {
@@ -77,7 +77,7 @@ const Navbar = () => {
             </p>
           </li>
         </ul>
-        <button>Solicitar Cotação</button>
+        <button onClick={showForm}>Solicitar Cotação</button>
       </nav>
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
