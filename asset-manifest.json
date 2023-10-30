@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Acad/static/css/main.6596a851.css",
+    "main.js": "/Acad/static/js/main.0f920ccf.js",
+    "static/media/pexels-timothy.jpg": "/Acad/static/media/pexels-timothy.1badbca8e32f04fb7777.jpg",
+    "static/media/5-stars.png": "/Acad/static/media/5-stars.4e84fc1786f455a1caa0.png",
+    "index.html": "/Acad/index.html",
+    "main.6596a851.css.map": "/Acad/static/css/main.6596a851.css.map",
+    "main.0f920ccf.js.map": "/Acad/static/js/main.0f920ccf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6596a851.css",
+    "static/js/main.0f920ccf.js"
+  ]
+}
