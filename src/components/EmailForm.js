@@ -31,6 +31,7 @@ const EmailForm = ({ formRef, showForm }) => {
           setEmail("");
           setNumber("");
           setMessage("Gostaria de fazer minha matrícula!");
+          showForm();
         },
         (err) => {
           console.log("ERRO:", err);
@@ -42,7 +43,7 @@ const EmailForm = ({ formRef, showForm }) => {
       <button id="close-form" onClick={showForm}>
         <FaX />
       </button>
-      <h2>Preencha os dados para a Matrícula</h2>
+      <h2>Dados para a Matrícula</h2>
 
       <form onSubmit={sendEmail}>
         <input

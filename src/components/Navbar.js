@@ -15,7 +15,7 @@ const Navbar = ({ showForm }) => {
   return (
     <div className="navbar">
       <h2>
-        <a href="/">
+        <a href="https://jotaperp.github.io/Acad/" rel="noreferrer">
           Academia
           <br />
           <span>Estação Fitness</span>
