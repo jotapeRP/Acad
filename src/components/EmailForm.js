@@ -38,11 +38,11 @@ const EmailForm = ({ formRef, showForm }) => {
       );
   };
   return (
-    <div ref={formRef} className="emailForm">
+    <div ref={formRef} className="emailForm showForm">
       <button id="close-form" onClick={showForm}>
         <FaX />
       </button>
-      <h2>Envie seus dados</h2>
+      <h2>Preencha os dados para a Matrícula</h2>
 
       <form onSubmit={sendEmail}>
         <input

@@ -13,6 +13,14 @@
   font-family: "PT Sans Narrow", sans-serif;
 }
 
+.app-over {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
 .home {
   color: var(--white);
   height: 100vh;

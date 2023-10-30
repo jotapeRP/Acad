@@ -1,16 +1,10 @@
-import { useRef } from "react";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 //Components
 import Navbar from "./Navbar";
 import EmailForm from "./EmailForm";
 
-const Home = () => {
-  const formRef = useRef();
-  const showForm = () => {
-    formRef.current.classList.toggle("showForm");
-  };
-
+const Home = ({ formRef, showForm }) => {
   return (
     <div className="home" id="home">
       <Navbar formRef={formRef} showForm={showForm} />
@@ -23,13 +17,21 @@ const Home = () => {
         <button onClick={showForm}>Faça sua matrícula já</button>
       </div>
       <div className="socialMedia">
-        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank">
+        <a
+          href="https://www.facebook.com/?locale=pt_BR"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaFacebookF />
         </a>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://twitter.com/login?lang=pt" target="_blank">
+        <a
+          href="https://twitter.com/login?lang=pt"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaXTwitter />
         </a>
       </div>
